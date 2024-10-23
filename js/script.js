@@ -1,9 +1,9 @@
 document.getElementById('signup').addEventListener('submit', function(event) {
-	event.preventDeafult();
+	event.preventDefault();
 	
 	const name = document.getElementById('name').value;
-	const email = document.getElementById('email).value;
-	const emailValidation = /^[^\s@]+@[^\s@]+\.[^\s@]+$\;
+	const email = document.getElementById('email').value;
+	const emailValidation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	
 	if(!emailValidation.test(email)) {
 		document.getElementById('response').textContent =
