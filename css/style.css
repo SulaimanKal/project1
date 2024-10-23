@@ -1,0 +1,30 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #4fb9af;
+	display: flex;
+	flex-diection: column;
+	align-items: center;
+}
+
+header {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+main{
+	background: white;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	width: 90%;
+	max-width: 400px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin: 0.5rem 0 0.2rem;
+}
