@@ -15,6 +15,8 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	document.getElementById('response').textContent =
 	  `Great, ${name}! You have joined our Email List! The email you signed up with: ${email}.`;
 	  
+	document.getElementById('response').style.opacity = 1;
+	  
 	window.scrollTo(0, 0);
 	
 	document.getElementById('signup').reset();
