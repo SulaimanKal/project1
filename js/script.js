@@ -16,7 +16,7 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	
 	document.getElementById('email').style.borderColor = "";
 	
-	
+	document.getElementById('loader').style.display = 'none';
 	
 	document.getElementById('response').textContent =
 	  `Great, ${name}! You have joined our Email List! The email you signed up with: ${email}.`;
