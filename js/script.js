@@ -10,13 +10,13 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	if(!emailValidation.test(email)) {
 		document.getElementById('response').textContent = "Enter a valid email address.";
 		document.getElementById('email').style.borderColor = "red";
-		document.getElementById('loader').style.display = 'none';
+		
 		return;
 	}
 	
 	document.getElementById('email').style.borderColor = "";
 	
-	document.getElementById('loader').style.display = 'none';
+	
 	
 	document.getElementById('response').textContent =
 	  `Great, ${name}! You have joined our Email List! The email you signed up with: ${email}.`;
