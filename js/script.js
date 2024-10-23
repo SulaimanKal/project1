@@ -16,6 +16,11 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	  `Great, ${name}! You have joined our Email List! The email you signed up with: ${email}.`;
 	  
 	document.getElementById('response').style.opacity = 1;
+	
+	main.style.backgroundColor = "c5e3c5";
+	setTimeout(() => {
+		main.style.backgroundColor = "white";
+	}, 1000);
 	  
 	window.scrollTo(0, 0);
 	
