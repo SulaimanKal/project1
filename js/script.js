@@ -13,22 +13,27 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 		document.getElementById('loader').style.display = 'none';
 		return;
 	}
-	console.log(`Name: ${name}, Email: ${email}`);
+	
+	document.getElementById('email').style.borderColor = "";
 	
 	document.getElementById('response').textContent =
 	  `Great, ${name}! You have joined our Email List! The email you signed up with: ${email}.`;
 	  
-	 document.getElementById('loader').style.display = 'none';
+	window.scrollTo({
+      top: document.getElementById('response').offsetTop,
+      behavior: 'smooth'	  
+	});
+	  
+	document.getElementById('loader').style.display = 'none';
 	  
 	document.getElementById('response').style.opacity = 1;
 	
+	const main = document.querySelector('main');
 	main.style.backgroundColor = "c5e3c5";
 	setTimeout(() => {
 		main.style.backgroundColor = "white";
 	}, 1000);
 	  
-	window.scrollTo(0, 0);
-	
 	document.getElementById('signup').reset();
 });
 
