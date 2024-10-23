@@ -34,6 +34,11 @@ input {
 	border-radius: 4px;
 }
 
+input:focus {
+	border-color: #336699;
+	box-shadow: 0 0 5px rgba(51, 102, 153, 0.5);
+}
+
 form {
 	display: flex;
 	flex-direction: column;
