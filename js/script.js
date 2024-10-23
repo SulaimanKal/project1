@@ -1,6 +1,8 @@
 document.getElementById('signup').addEventListener('submit', function(event) {
 	event.preventDefault();
 	
+	document.getElementById('loader').style.display = 'block';
+	
 	const name = document.getElementById('name').value;
 	const email = document.getElementById('email').value;
 	const emailValidation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
