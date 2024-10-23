@@ -8,8 +8,9 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	const emailValidation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	
 	if(!emailValidation.test(email)) {
-		document.getElementById('response').textContent =
-	      "Enter a valid email address.";
+		document.getElementById('response').textContent = "Enter a valid email address.";
+		document.getElementById('email').style.borderColor = "red";
+		document.getElementById('loader').style.display = 'none';
 		return;
 	}
 	console.log(`Name: ${name}, Email: ${email}`);
