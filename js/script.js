@@ -18,6 +18,8 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 		
 	document.getElementById('response').textContent =
 	  `Great, ${name}! You have joined our Email List! The email you signed up with: ${email}.`;
+	
+	document.getElementById('loader').style.display = 'none';
 	  
 	window.scrollTo({
       top: document.getElementById('response').offsetTop,
@@ -31,9 +33,7 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	setTimeout(() => {
 		main.style.backgroundColor = "white";
 	}, 1000);
-	
-	document.getElementById('loader').style.display = 'none';
-	
+
 	document.getElementById('signup').reset();
 	
 });
