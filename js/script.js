@@ -17,6 +17,8 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	document.getElementById('response').textContent =
 	  `Great, ${name}! You have joined our Email List! The email you signed up with: ${email}.`;
 	  
+	 document.getElementById('loader').style.display = 'none';
+	  
 	document.getElementById('response').style.opacity = 1;
 	
 	main.style.backgroundColor = "c5e3c5";
@@ -27,4 +29,9 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	window.scrollTo(0, 0);
 	
 	document.getElementById('signup').reset();
+});
+
+document.getElementById('name').addEventListener('input', function() {
+	const length = this.value.length;
+	document.getElementById('name-counter').textContent = `${length}/50;
 });
