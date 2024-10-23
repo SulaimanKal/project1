@@ -29,7 +29,7 @@ document.getElementById('signup').addEventListener('submit', function(event) {
 	document.getElementById('response').style.opacity = 1;
 	
 	const main = document.querySelector('main');
-	main.style.backgroundColor = "c5e3c5";
+	main.style.backgroundColor = "#c5e3c5";
 	setTimeout(() => {
 		main.style.backgroundColor = "white";
 	}, 1000);
