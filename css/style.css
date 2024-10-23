@@ -18,6 +18,14 @@ main{
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	width: 90%;
 	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label, input, button {
+	width: 100%;
+	margin: 0.5 rem 0;
 }
 
 form {
