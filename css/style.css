@@ -109,5 +109,13 @@ button:hover {
 @media (min-width: 900px) {
   main {
     width: 60%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
   }
+  
+ form, #response {
+	 width: 45%;
+ }
 }
+
