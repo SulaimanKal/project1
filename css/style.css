@@ -106,11 +106,7 @@ button:hover {
   }
 }
 
-@media (max-width: 599px) {
-  input, button {
-    width: 90%;
-  }
-}
+
 
 @media (min-width: 900px) {
   main {
