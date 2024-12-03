@@ -28,6 +28,8 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes spin {
@@ -105,20 +107,23 @@ button:hover {
     width: 80%;
   }
 }
+
 @media (max-width: 599px) {
-  input, button {
+  input,
+  button {
     width: 90%;
   }
 }
 
-
 @media (min-width: 900px) {
   main {
     width: 60%;
+    flex-direction: column;
+    align-items: center;
   }
   
-  form, #response {
-    width: 45%;
+  form,
+  #response {
+    width: 100%;
   }
 }
-
