@@ -106,6 +106,12 @@ button:hover {
   }
 }
 
+@media (max-width: 599px) {
+  input, button {
+    width: 90%;
+  }
+}
+
 @media (min-width: 900px) {
   main {
     width: 60%;
@@ -114,8 +120,8 @@ button:hover {
 	align-items: flex-start;
   }
   
- form, #response {
-	 width: 45%;
- }
+  form, #response {
+    width:
+  }
 }
 
